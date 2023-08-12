@@ -2945,7 +2945,7 @@ static VkResult read_data_files_in_search_paths(const struct loader_instance *in
     if (NULL == xdg_config_dirs) {
         xdg_config_dirs_secenv_alloc = false;
     }
-#if !defined(__Fuchsia__) && !defined(__QNXNTO__)
+#if !defined(__Fuchsia__) && !defined(__QNXNTO__) && !defined(OSOHOS)
     if (NULL == xdg_config_dirs || '\0' == xdg_config_dirs[0]) {
         xdg_config_dirs = FALLBACK_CONFIG_DIRS;
     }
@@ -2960,7 +2960,7 @@ static VkResult read_data_files_in_search_paths(const struct loader_instance *in
     if (NULL == xdg_data_dirs) {
         xdg_data_dirs_secenv_alloc = false;
     }
-#if !defined(__Fuchsia__) && !defined(__QNXNTO__)
+#if !defined(__Fuchsia__) && !defined(__QNXNTO__) && !defined(OSOHOS)
     if (NULL == xdg_data_dirs || '\0' == xdg_data_dirs[0]) {
         xdg_data_dirs = FALLBACK_DATA_DIRS;
     }
@@ -3038,7 +3038,7 @@ static VkResult read_data_files_in_search_paths(const struct loader_instance *in
 #if defined(__APPLE__)
             search_path_size += MAXPATHLEN;
 #endif
-#ifndef _WIN32
+#if !defined(_WIN32) && !defined(OSOHOS)
             // Only add the home folders if not ICD filenames or superuser
             if (is_directory_list && !is_high_integrity()) {
                 if (NULL != default_config_home) {
@@ -3081,7 +3081,7 @@ static VkResult read_data_files_in_search_paths(const struct loader_instance *in
     if (NULL != override_path) {
         strcpy(cur_path_ptr, override_path);
     } else {
-#ifndef _WIN32
+#if !defined(_WIN32) && !defined(OSOHOS)
         if (rel_size > 0) {
 #if defined(__APPLE__)
             // Add the bundle's Resources dir to the beginning of the search path.
