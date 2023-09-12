@@ -1,8 +1,8 @@
 [
     {
-        "Name": "chromium_third_party_vulkan_deps_vulkan_loader",                   # 上游开源软件名全称
-        "License": "Khronos Group Inc", "Khronos Group Inc2","Khronos Group Inc3"        # 上游开源软件中包含的许可证信息
-        "License File": "LICENSE.txt"     # 许可证所在文件路径
+        "Name": "Vulkan-Loader",                   # 上游开源软件名全称
+        "License": "Khronos License",       # 上游开源软件中包含的许可证信息
+        "License File": "LICENSE.txt",     # 许可证所在文件路径
         "Version Number": "60d17fe6c65befa0a738b6c33da2eb0670055f3b",
         "Upstream URL": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Loader@60d17fe6c65befa0a738b6c33da2eb0670055f3b",   # 上游软件包发布地址
         "Description": "第三方软件vulkan-deps/vulkan-loader"           # 开源软件功能描述
