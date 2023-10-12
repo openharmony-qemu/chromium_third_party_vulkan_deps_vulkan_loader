@@ -77,13 +77,13 @@ used to filter file path.
             </filefilter>
             <filefilter name="binaryFileTypePolicyFilter">
                 <filteritem type="filepath" name=".*png"
-                    desc="Chromium原生二进制文件，不会使用" />
+                    desc="chromium原生二进制文件，不会使用" />
                 <filteritem type="filepath" name=".*dll"
-                    desc="Chromium原生二进制文件，不会使用" />
+                    desc="chromium原生二进制文件，不会使用" />
                 <filteritem type="filepath" name=".*so"
-                    desc="Chromium原生二进制文件，不会使用" />
+                    desc="chromium原生二进制文件，不会使用" />
                 <filteritem type="filepath" name=".*aps"
-                    desc="Chromium原生二进制文件，不会使用" />
+                    desc="chromium原生二进制文件，不会使用" />
             </filefilter>
         </filefilterlist>
         <licensematcherlist>
