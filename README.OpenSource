@@ -6,6 +6,6 @@
         "Version Number": "60d17fe6c65befa0a738b6c33da2eb0670055f3b",
         "Owner": "jinchanggang@huawei.com",
         "Upstream URL": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Loader@60d17fe6c65befa0a738b6c33da2eb0670055f3b",   
-        "Description": "第三方软件vulkan-deps/vulkan-loader"          
+        "Description": "第三方软件vulkan-deps/vulkan-loader,loader负责和各个layer交互并且支持多GPUs和其驱动"          
     }
 ]
