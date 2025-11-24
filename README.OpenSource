@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "Vulkan-Loader",                
+        "License": "Apache-2.0",       
+        "License File": "LICENSE.txt",   
+        "Version Number": "b0177a972b8d47e823a4500cf88df88a8c27add7",
+        "Owner": "huamengzheng@huawei.com",
+        "Upstream URL": "https://chromium.googlesource.com/external/github.com/KhronosGroup/Vulkan-Loader@b0177a972b8d47e823a4500cf88df88a8c27add7",   
+        "Description": "第三方软件vulkan-deps/vulkan-loader,loader负责和各个layer交互并且支持多GPUs和其驱动"          
+    }
+]
