@@ -1,0 +1,16 @@
+--- src/third_party/vulkan-loader/src/loader/generated/vk_loader_extensions.c
++++ src/third_party/vulkan-loader/src/loader/generated/vk_loader_extensions.c
+@@ -10694,11 +10695,12 @@ VKAPI_ATTR VkResult VKAPI_CALL terminator_CreateSurfaceOHOS(
+         loader_log(
+             NULL, VULKAN_LOADER_FATAL_ERROR_BIT | VULKAN_LOADER_ERROR_BIT | VULKAN_LOADER_VALIDATION_BIT, 0,
+             "vkCreateSurfaceOHOS: Invalid instance [VUID-vkCreateSurfaceOHOS-instance-parameter]");
+         abort(); /* Intentionally fail so user can correct issue. */
+     }
+-#error("Not implemented. Likely needs to be manually generated!");
++// #error("Not implemented. Likely needs to be manually generated!");
++    return VK_ERROR_FEATURE_NOT_PRESENT;
+ }
+ 
+ #endif // VK_USE_PLATFORM_OHOS
+ 
+ // ---- VK_NV_cooperative_matrix2 extension trampoline/terminators
