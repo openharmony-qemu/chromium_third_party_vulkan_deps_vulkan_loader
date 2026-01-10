@@ -10940,9 +10940,8 @@ VKAPI_ATTR VkResult VKAPI_CALL CreateSurfaceOHOS(
             "vkCreateSurfaceOHOS: Invalid instance [VUID-vkCreateSurfaceOHOS-instance-parameter]");
         abort(); /* Intentionally fail so user can correct issue. */
     }
-// #error("Not implemented. Likely needs to be manually generated!");
-//     return inst->disp->CreateSurfaceOHOS(instance, pCreateInfo, pAllocator, pSurface);
-    return VK_ERROR_FEATURE_NOT_PRESENT;
+#error("Not implemented. Likely needs to be manually generated!");
+    return inst->disp->CreateSurfaceOHOS(instance, pCreateInfo, pAllocator, pSurface);
 }
 
 VKAPI_ATTR VkResult VKAPI_CALL terminator_CreateSurfaceOHOS(
@@ -10957,8 +10956,7 @@ VKAPI_ATTR VkResult VKAPI_CALL terminator_CreateSurfaceOHOS(
             "vkCreateSurfaceOHOS: Invalid instance [VUID-vkCreateSurfaceOHOS-instance-parameter]");
         abort(); /* Intentionally fail so user can correct issue. */
     }
-// #error("Not implemented. Likely needs to be manually generated!");
-    return VK_ERROR_FEATURE_NOT_PRESENT;
+#error("Not implemented. Likely needs to be manually generated!");
 }
 
 #endif // VK_USE_PLATFORM_OHOS
